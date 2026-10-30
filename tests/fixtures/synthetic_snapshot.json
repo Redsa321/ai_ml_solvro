@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "dataset_type": "synthetic",
+  "provenance": {
+    "fetched_at": "2026-10-30T00:00:00+00:00",
+    "selection_method": "Handwritten fictional examples for offline software tests. Never fetched from OpenReview.",
+    "warning": "All titles, claims, reviews, ratings and IDs are synthetic. Not a research corpus."
+  },
+  "venues": [
+    {
+      "id": "ICLR.cc/2024/Conference", "year": 2024,
+      "verified": true,
+      "verification_note": "Synthetic invitation map for tests; not verification of the live conference schema.",
+      "submission_invitation": "ICLR.cc/2024/Conference/-/Submission",
+      "review_invitations": {
+        "ICLR.cc/2024/Conference/Submission1/-/Official_Review": "fixture-iclr-quant",
+        "ICLR.cc/2024/Conference/Submission2/-/Official_Review": "fixture-iclr-decode"
+      },
+      "rating_fields": ["rating", "confidence"]
+    },
+    {
+      "id": "NeurIPS.cc/2024/Conference", "year": 2024,
+      "verified": true,
+      "verification_note": "Synthetic invitation map for tests; not verification of the live conference schema.",
+      "submission_invitation": "NeurIPS.cc/2024/Conference/-/Submission",
+      "review_invitations": {
+        "NeurIPS.cc/2024/Conference/Submission1/-/Official_Review": "fixture-neurips-cache"
+      },
+      "rating_fields": ["overall", "confidence"]
+    }
+  ],
+  "notes": [
+    {
+      "id": "fixture-iclr-quant", "forum": "fixture-iclr-quant", "readers": ["everyone"],
+      "invitations": ["ICLR.cc/2024/Conference/-/Submission"],
+      "content": {
+        "title": {"value": "[FICTIONAL] TinyBit: Quantization for Language Model Inference"},
+        "abstract": {"value": "We propose 4-bit quantization for language model inference. Quantization reduces memory consumption while preserving generation quality on the evaluated tasks. The method targets deployment on a single accelerator."},
+        "venueid": {"value": "ICLR.cc/2024/Conference"}
+      }
+    },
+    {
+      "id": "fixture-iclr-decode", "forum": "fixture-iclr-decode", "readers": ["everyone"],
+      "invitations": ["ICLR.cc/2024/Conference/-/Submission"],
+      "content": {
+        "title": {"value": "[FICTIONAL] DraftRun: Speculative Decoding with a Small Draft Model"},
+        "abstract": {"value": "Speculative decoding uses a small draft language model and a larger verification model. We report lower decoding latency for short prompts. The draft model proposes tokens which the verification model checks."},
+        "venueid": {"value": "ICLR.cc/2024/Conference"}
+      }
+    },
+    {
+      "id": "fixture-neurips-cache", "forum": "fixture-neurips-cache", "readers": ["everyone"],
+      "invitations": ["NeurIPS.cc/2024/Conference/-/Submission"],
+      "content": {
+        "title": {"value": "[FICTIONAL] CacheShelf: KV Cache Compression for Long Contexts"},
+        "abstract": {"value": "We compress the KV cache during language model inference to reduce memory usage for long contexts. A token selection policy retains important cache entries. The authors claim improved memory efficiency."},
+        "venueid": {"value": "NeurIPS.cc/2024/Conference"}
+      }
+    },
+    {
+      "id": "fixture-review-quant-positive", "forum": "fixture-iclr-quant",
+      "replyto": "fixture-iclr-quant", "readers": ["everyone"],
+      "invitations": ["ICLR.cc/2024/Conference/Submission1/-/Official_Review"],
+      "content": {
+        "strengths": {"value": "The quantization approach reduces memory usage. Generation quality appears preserved on the evaluated short tasks."},
+        "weaknesses": {"value": "Quantization latency was measured on a single accelerator. Throughput under concurrent requests is not evaluated."},
+        "rating": {"value": "7: accept in this fictional scale"}, "confidence": {"value": 3}
+      }
+    },
+    {
+      "id": "fixture-review-quant-critical", "forum": "fixture-iclr-quant",
+      "replyto": "fixture-iclr-quant", "readers": ["everyone"],
+      "invitations": ["ICLR.cc/2024/Conference/Submission1/-/Official_Review"],
+      "content": {
+        "weaknesses": {"value": "The claim that quantization preserves generation quality is not convincing. The quality evaluation omits long-context tasks, and the comparison lacks a strong quantization baseline."},
+        "questions": {"value": "Does quantization preserve quality on long-context generation? Please report uncertainty."},
+        "rating": {"value": "4: reject in this fictional scale"}
+      }
+    },
+    {
+      "id": "fixture-review-decode", "forum": "fixture-iclr-decode",
+      "replyto": "fixture-iclr-decode", "readers": ["everyone"],
+      "invitations": ["ICLR.cc/2024/Conference/Submission2/-/Official_Review"],
+      "content": {
+        "review": {"value": "Speculative decoding latency improves on short prompts. The evaluation omits long prompts and the cost of training the draft model. Acceptance rate varies by workload."},
+        "rating": {"value": "6: weak accept in this fictional scale"},
+        "unexpected_text_field": {"value": "Energy consumption measurements are absent."}
+      }
+    },
+    {
+      "id": "fixture-review-cache", "forum": "fixture-neurips-cache",
+      "replyto": "fixture-neurips-cache", "readers": ["everyone"],
+      "invitations": ["NeurIPS.cc/2024/Conference/Submission1/-/Official_Review"],
+      "content": {
+        "summary": {"value": "The paper compresses KV cache memory during long-context inference."},
+        "limitations": {"value": "The KV cache compression evaluation lacks retrieval-heavy workloads. Memory savings may depend on context length. Quantization comparisons are absent."},
+        "overall": {"value": "3: positive in another fictional scale"},
+        "confidence": {"value": "2: moderate"}
+      }
+    },
+    {
+      "id": "fixture-comment", "forum": "fixture-iclr-quant", "replyto": "fixture-iclr-quant",
+      "readers": ["everyone"],
+      "invitations": ["ICLR.cc/2024/Conference/Submission1/-/Official_Comment"],
+      "content": {"comment": {"value": "AUTHORCOMMENTONLY We will extend the evaluation."}}
+    },
+    {
+      "id": "fixture-decision", "forum": "fixture-iclr-quant", "replyto": "fixture-iclr-quant",
+      "readers": ["everyone"],
+      "invitations": ["ICLR.cc/2024/Conference/Submission1/-/Decision"],
+      "content": {"decision": {"value": "DECISIONONLY Accept this fictional submission."}}
+    },
+    {
+      "id": "fixture-rebuttal", "forum": "fixture-neurips-cache", "replyto": "fixture-neurips-cache",
+      "readers": ["everyone"],
+      "invitations": ["NeurIPS.cc/2024/Conference/Submission1/-/Rebuttal"],
+      "content": {"rebuttal": {"value": "REBUTTALONLY The authors respond to the cache review."}}
+    }
+  ]
+}

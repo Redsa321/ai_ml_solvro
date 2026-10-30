@@ -1,0 +1,3 @@
+{"question_id":"fixture-q1","question":"What quantization quality limitations do reviewers identify?","answerable":true,"kind":"official_review","conference":"iclr2024"}
+{"question_id":"fixture-q2","question":"Which KV cache compression workloads are missing?","answerable":true,"kind":"official_review","conference":"neurips2024"}
+{"question_id":"fixture-no-data","question":"What exact interstellar neutrino detector calibration constant was measured?","answerable":false,"absence_reason":"The fictional fixture contains no detector calibration data.","absence_check":"All three handwritten abstracts and all four fictional reviews were inspected."}

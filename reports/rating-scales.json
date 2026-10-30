@@ -1,0 +1,103 @@
+{
+  "checked_at": "2026-10-30T12:31:52.515157+00:00",
+  "note": "Inwentarz skal. Oryginalne pola i wartości recenzji pozostają niezmienione.",
+  "original_rating_scales": {
+    "ICLR.cc/2024/Conference": {
+      "confidence": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "contribution": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "presentation": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "rating": [
+        [
+          1,
+          3,
+          5,
+          6,
+          8,
+          10
+        ]
+      ],
+      "soundness": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "NeurIPS.cc/2024/Conference": {
+      "confidence": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "contribution": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "presentation": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "rating": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "soundness": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  "snapshot": "data/raw/openreview-v3-830dc090e225.json",
+  "snapshot_sha256": "830dc090e225959047a2619f2c04905131af7c24008aaad1c7e7634d22ce9302",
+  "unresolved": []
+}

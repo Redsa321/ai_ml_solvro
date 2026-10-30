@@ -1,0 +1,24 @@
+# Sekrety i lokalne środowisko
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# Pobrane dane i odtwarzalne artefakty; manifesty i raporty pozostają jawne.
+/data/raw/
+/data/processed/
+/data/index/
+/runs/
+/models/
+
+# Eksporty zapisywane przez przeglądarkę w głównym folderze.
+/openreview-*.json

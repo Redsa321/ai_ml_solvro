@@ -1,0 +1,2 @@
+{"question_id":"fixture-q1","source_id":"fixture-review-quant-critical","reason":"The fictional reviewer identifies missing long-context quality evaluation and a missing baseline.","evidence":"The quality evaluation omits long-context tasks"}
+{"question_id":"fixture-q2","source_id":"fixture-review-cache","reason":"The fictional review names a missing class of workloads for cache compression.","evidence":"The KV cache compression evaluation lacks retrieval-heavy workloads."}

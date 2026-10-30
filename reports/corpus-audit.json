@@ -1,0 +1,139 @@
+{
+  "checked_at": "2026-10-30T11:58:51.193878+00:00",
+  "collection": {
+    "abstracts": 60,
+    "all_note_ids_unique": true,
+    "official_reviews": 235,
+    "other_replies_not_indexed": 927,
+    "papers": 60,
+    "reply_type_counts": {
+      "Author_Rebuttal": 26,
+      "Decision": 60,
+      "Meta_Review": 30,
+      "Official_Comment": 691,
+      "Public_Comment": 5,
+      "Rebuttal": 115
+    },
+    "reviews_per_paper_max": 6,
+    "reviews_per_paper_min": 3,
+    "verified_review_schemas": 60
+  },
+  "corpus_fingerprint": "d0c8286546fa1f24fe2f39e1fdb5c3dfbfe5c8e71263fc5eb162057eccb37452",
+  "limitations": [
+    "Próba obejmuje wyłącznie zaakceptowane prace z publicznymi recenzjami.",
+    "Wstępny filtr słów tytułu i abstraktu nie jest kompletnym przeglądem konferencji.",
+    "Dobór tematyczny sprawdził asystent; nie jest to ręcznie zweryfikowany benchmark odpowiedzi.",
+    "Analiza opiera się na abstraktach i publicznych recenzjach, bez PDF-ów."
+  ],
+  "original_rating_scales": {
+    "ICLR.cc/2024/Conference": {
+      "confidence": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "contribution": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "presentation": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "rating": [
+        [
+          1,
+          3,
+          5,
+          6,
+          8,
+          10
+        ]
+      ],
+      "soundness": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    },
+    "NeurIPS.cc/2024/Conference": {
+      "confidence": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "contribution": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "presentation": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "rating": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "soundness": [
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  "rating_schema_checked_at": "2026-10-30T12:31:52.515157+00:00",
+  "rating_schema_unresolved": [],
+  "snapshot": "data/raw/openreview-v3-830dc090e225.json",
+  "snapshot_sha256": "830dc090e225959047a2619f2c04905131af7c24008aaad1c7e7634d22ce9302",
+  "topic_audit": {
+    "audited_candidates": 104,
+    "awaiting_review_download": 24,
+    "decisions_file": "data/curation/topic-audit.jsonl",
+    "human_reviewed": false,
+    "reviewer": "assistant",
+    "selected_already_downloaded": 36,
+    "selection_file": "data/curation/topic-selection.json",
+    "selection_id": "88c068768657f85aae703e9464306e90ecbacc377e1e1cfde43acd5bdd53cd67",
+    "target_papers": 60
+  }
+}
