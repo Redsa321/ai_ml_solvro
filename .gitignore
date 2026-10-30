@@ -4,14 +4,24 @@
 !.env.example
 .venv/
 venv/
+
+# Pliki Pythona i zbudowane pakiety
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
 *.egg-info/
 build/
 dist/
+
+# Cache narzędzi i raporty pokrycia testami
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
 
 # Pobrane dane i odtwarzalne artefakty; manifesty i raporty pozostają jawne.
 /data/raw/
@@ -20,5 +30,20 @@ dist/
 /runs/
 /models/
 
+# Lokalne bazy SQLite oraz pliki dziennika
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+
 # Eksporty zapisywane przez przeglądarkę w głównym folderze.
 /openreview-*.json
+
+# Logi i pliki tymczasowe edytorów oraz systemu
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
