@@ -1,0 +1,90 @@
+{
+  "counts": {
+    "chunks": 921,
+    "papers": 36,
+    "sources": 178
+  },
+  "limitation": "Próba jest mniejsza od zakładanych 30+30 z powodu ograniczeń dostępu API.",
+  "not_collected_from_candidate_list": {
+    "ICLR.cc/2024/Conference": [
+      "1ndDmZdT4g",
+      "2Y5kBPtU0o",
+      "3TO3TtnOFl",
+      "64kSvC4iPg",
+      "Agyicd577r",
+      "BifeBRhikU",
+      "LzPWWPAdY4",
+      "SLw9fp4yI6",
+      "WvFoJccpo8",
+      "bkNx3O0sND",
+      "gLARhFLE0F",
+      "osoWxY8q2E",
+      "qV83K9d5WB",
+      "vXxardq6db"
+    ],
+    "NeurIPS.cc/2024/Conference": [
+      "5bR2l1b2eh",
+      "Ni9kebsSTt",
+      "UIOjGTKHQG",
+      "WY3xgXIZUR",
+      "cr5EQRJlRn",
+      "i8JaxY7tDI",
+      "iSfCWhvEGA",
+      "lEUle8S4xQ",
+      "pNnvzQsS4P",
+      "raABeiV71j"
+    ]
+  },
+  "papers_per_conference": {
+    "ICLR.cc/2024/Conference": 16,
+    "NeurIPS.cc/2024/Conference": 20
+  },
+  "reviews_per_conference": {
+    "ICLR.cc/2024/Conference": 65,
+    "NeurIPS.cc/2024/Conference": 77
+  },
+  "selected_paper_ids": {
+    "ICLR.cc/2024/Conference": [
+      "02f3mUtqnM",
+      "6RR3wU4mSZ",
+      "8Wuvhh0LYW",
+      "B9klVS7Ddk",
+      "FIplmUWdm3",
+      "JzG7kSpjJk",
+      "NG7sS51zVF",
+      "Q1u25ahSuy",
+      "mlJLVigNHp",
+      "oXYZJXDdo7",
+      "of2rhALq8l",
+      "rsY6J3ZaTF",
+      "uNrFpDPMyo",
+      "uREj4ZuGJE",
+      "x8VNtpCu1I",
+      "xw29VvOMmU"
+    ],
+    "NeurIPS.cc/2024/Conference": [
+      "6uv9ViIoMj",
+      "B1vGiSgELw",
+      "HAcaANQNMK",
+      "HfpV6u0kbX",
+      "JAhNsZ9dvG",
+      "KSOkkHm9I7",
+      "KT6F5Sw0eg",
+      "M2UzLRoqic",
+      "MxF0IKJtKW",
+      "QAiKLaCrKj",
+      "QVG7j29Sta",
+      "VqkAKQibpq",
+      "WxLVYZbIew",
+      "YawXY6mWiK",
+      "YvA8UF0I37",
+      "lT3oc04mDp",
+      "mp8u2Pcmqz",
+      "poE54GOq2l",
+      "tVConYid20",
+      "wT6GHk5ShC"
+    ]
+  },
+  "selection_basis": "Dostępne publiczne wątki z listy tematycznej; dobór niezależny od ocen recenzji i wyników benchmarku.",
+  "snapshot_sha256": "0aecb4ad7226c368e60fac033acb906868e51d43a9409fb1cd6ae1a8f4b17720"
+}

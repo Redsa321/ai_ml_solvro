@@ -1,0 +1,13 @@
+{
+  "cause": "Dopasowanie OR po słowie calibration zwraca recenzje kwantyzacji bez danych o detektorze neutrin.",
+  "not_part_of_final_benchmark": true,
+  "packet": "runs/examples/ask-99eaf85c4dce4028a2e1e43053aaf57f",
+  "query": "interstellar neutrino detector calibration constant2026",
+  "source_ids": [
+    "ee93PA4E4E",
+    "2K9nA3bqld",
+    "gtK2zHXec3",
+    "uRvbLgfdT5",
+    "tVUFCMjEfF"
+  ]
+}

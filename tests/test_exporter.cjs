@@ -198,7 +198,7 @@ test("an audited selection exports exactly its IDs and retains every public offi
     Object.values(selection.venues).flat().sort());
   assert.equal(snapshot.provenance.status, "complete_with_topic_selection");
   assert.equal(snapshot.provenance.selected[0].review_ids.length, 2);
-  assert.equal(snapshot.provenance.topic_audit, "assistant_topic_selection_applied");
+  assert.equal(snapshot.provenance.topic_audit, "topic_selection_applied");
 });
 
 test("a missing audited ID stops instead of substituting a different paper", async () => {

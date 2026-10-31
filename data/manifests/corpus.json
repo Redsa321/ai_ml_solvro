@@ -1,0 +1,901 @@
+{
+  "chunk_config": {
+    "overlap": 30,
+    "words": 180
+  },
+  "corpus_fingerprint": "794408462896b6ad3a99750b4a879d4ae2bd0ed2ebf69992a6b318bba65e3d83",
+  "dataset_type": "openreview",
+  "import_report": {
+    "ignored_other_replies": 519,
+    "official_reviews": 142,
+    "papers": 36,
+    "raw_notes": 697
+  },
+  "index_fingerprint": "2162bc080c1e1a7d62776cc035729a7eec902b5bf2aa39c35f43f631dfc52a2d",
+  "paper_ids": [
+    "02f3mUtqnM",
+    "6RR3wU4mSZ",
+    "6uv9ViIoMj",
+    "8Wuvhh0LYW",
+    "B1vGiSgELw",
+    "B9klVS7Ddk",
+    "FIplmUWdm3",
+    "HAcaANQNMK",
+    "HfpV6u0kbX",
+    "JAhNsZ9dvG",
+    "JzG7kSpjJk",
+    "KSOkkHm9I7",
+    "KT6F5Sw0eg",
+    "M2UzLRoqic",
+    "MxF0IKJtKW",
+    "NG7sS51zVF",
+    "Q1u25ahSuy",
+    "QAiKLaCrKj",
+    "QVG7j29Sta",
+    "VqkAKQibpq",
+    "WxLVYZbIew",
+    "YawXY6mWiK",
+    "YvA8UF0I37",
+    "lT3oc04mDp",
+    "mlJLVigNHp",
+    "mp8u2Pcmqz",
+    "oXYZJXDdo7",
+    "of2rhALq8l",
+    "poE54GOq2l",
+    "rsY6J3ZaTF",
+    "tVConYid20",
+    "uNrFpDPMyo",
+    "uREj4ZuGJE",
+    "wT6GHk5ShC",
+    "x8VNtpCu1I",
+    "xw29VvOMmU"
+  ],
+  "provenance": {
+    "fetched_at": "2026-10-30T11:35:37.802Z",
+    "papers_per_conference": {
+      "ICLR.cc/2024/Conference": 16,
+      "NeurIPS.cc/2024/Conference": 20
+    },
+    "prepared_at": "2026-10-31T07:19:02.339822+00:00",
+    "processing": [
+      "topic_subset",
+      "metadata_projection"
+    ],
+    "requests": [
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:38.281Z",
+        "url": "https://api2.openreview.net/groups?id=ICLR.cc%2F2024%2FConference"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:39.243Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2024%2FConference&limit=500&offset=0&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:40.220Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2024%2FConference&limit=500&offset=500&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:41.318Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2024%2FConference&limit=500&offset=1000&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:42.365Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2024%2FConference&limit=500&offset=1500&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:43.072Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=ICLR.cc%2F2024%2FConference&limit=500&offset=2000&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:43.608Z",
+        "url": "https://api2.openreview.net/notes?forum=6RR3wU4mSZ&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:44.075Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission1134%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:44.703Z",
+        "url": "https://api2.openreview.net/notes?forum=Q1u25ahSuy&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:45.146Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission2671%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:45.602Z",
+        "url": "https://api2.openreview.net/notes?forum=x8VNtpCu1I&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:46.237Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission8680%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:46.854Z",
+        "url": "https://api2.openreview.net/notes?forum=UMfcdRIotC&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:47.470Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission1870%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:47.935Z",
+        "url": "https://api2.openreview.net/notes?forum=AF9Q8Vip84&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:48.493Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission338%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:49.106Z",
+        "url": "https://api2.openreview.net/notes?forum=xw29VvOMmU&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:49.719Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission6703%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:50.247Z",
+        "url": "https://api2.openreview.net/notes?forum=of2rhALq8l&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:50.699Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission1842%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:51.360Z",
+        "url": "https://api2.openreview.net/notes?forum=JYu5Flqm9D&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:51.978Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission3174%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:52.587Z",
+        "url": "https://api2.openreview.net/notes?forum=mvMI3N4AvD&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:53.202Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission66%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:53.817Z",
+        "url": "https://api2.openreview.net/notes?forum=S1RKWSyZ2Y&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:54.428Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission485%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:54.892Z",
+        "url": "https://api2.openreview.net/notes?forum=oXYZJXDdo7&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:55.453Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission5008%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:56.073Z",
+        "url": "https://api2.openreview.net/notes?forum=uNrFpDPMyo&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:56.684Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission6547%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:57.297Z",
+        "url": "https://api2.openreview.net/notes?forum=uREj4ZuGJE&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:57.911Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission9031%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:58.400Z",
+        "url": "https://api2.openreview.net/notes?forum=hTEGyKf0dZ&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:58.911Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission7972%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:35:59.552Z",
+        "url": "https://api2.openreview.net/notes?forum=B9klVS7Ddk&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:00.164Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission3743%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:00.626Z",
+        "url": "https://api2.openreview.net/notes?forum=w3YZ9MSlBu&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:01.208Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission8278%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:01.684Z",
+        "url": "https://api2.openreview.net/notes?forum=Rc7dAwVL3v&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:02.313Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission4886%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:02.929Z",
+        "url": "https://api2.openreview.net/notes?forum=rsY6J3ZaTF&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:03.384Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission4571%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:03.953Z",
+        "url": "https://api2.openreview.net/notes?forum=mlJLVigNHp&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:04.567Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission8767%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:05.185Z",
+        "url": "https://api2.openreview.net/notes?forum=NG7sS51zVF&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:05.683Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission2631%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:06.142Z",
+        "url": "https://api2.openreview.net/notes?forum=JzG7kSpjJk&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:06.721Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission1876%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:07.334Z",
+        "url": "https://api2.openreview.net/notes?forum=BteuUysuXX&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:07.951Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission569%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:08.562Z",
+        "url": "https://api2.openreview.net/notes?forum=02f3mUtqnM&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:09.174Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission7318%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:09.700Z",
+        "url": "https://api2.openreview.net/notes?forum=7gUrYE50Rb&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:10.145Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission5897%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:10.814Z",
+        "url": "https://api2.openreview.net/notes?forum=8Wuvhh0LYW&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:11.429Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission1585%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:12.042Z",
+        "url": "https://api2.openreview.net/notes?forum=qoYogklIPz&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:12.659Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission2991%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:13.277Z",
+        "url": "https://api2.openreview.net/notes?forum=dFcXJgnrGB&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:13.886Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission8605%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:14.500Z",
+        "url": "https://api2.openreview.net/notes?forum=wXpSidPpc5&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:15.116Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission7503%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:15.729Z",
+        "url": "https://api2.openreview.net/notes?forum=HYyRwm367m&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:16.344Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission7823%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:16.825Z",
+        "url": "https://api2.openreview.net/notes?forum=FIplmUWdm3&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:17.475Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=ICLR.cc%2F2024%2FConference%2FSubmission54%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:17.975Z",
+        "url": "https://api2.openreview.net/groups?id=NeurIPS.cc%2F2024%2FConference"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:18.829Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=0&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:19.771Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=500&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:20.740Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=1000&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:21.720Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=1500&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:22.398Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=2000&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:23.377Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=2500&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:24.338Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=3000&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:25.064Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=3500&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:25.768Z",
+        "url": "https://api2.openreview.net/notes?content.venueid=NeurIPS.cc%2F2024%2FConference&limit=500&offset=4000&sort=number%3Aasc"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:26.484Z",
+        "url": "https://api2.openreview.net/notes?forum=qEpi8uWX3N&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:27.096Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission1402%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:27.710Z",
+        "url": "https://api2.openreview.net/notes?forum=JAhNsZ9dvG&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:28.324Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission11946%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:28.943Z",
+        "url": "https://api2.openreview.net/notes?forum=eQ6VjBhevn&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:29.553Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission17327%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:30.170Z",
+        "url": "https://api2.openreview.net/notes?forum=glfYOAzh2f&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:30.783Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission19619%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:31.500Z",
+        "url": "https://api2.openreview.net/notes?forum=HAcaANQNMK&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:32.116Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission7661%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:32.728Z",
+        "url": "https://api2.openreview.net/notes?forum=QAiKLaCrKj&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:33.341Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission4141%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:33.920Z",
+        "url": "https://api2.openreview.net/notes?forum=poE54GOq2l&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:34.573Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission18804%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:35.202Z",
+        "url": "https://api2.openreview.net/notes?forum=bzPmjmiaz8&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:35.903Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission1293%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:36.621Z",
+        "url": "https://api2.openreview.net/notes?forum=MxF0IKJtKW&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:37.233Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission8375%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:38.567Z",
+        "url": "https://api2.openreview.net/notes?forum=1PcJ5Evta7&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:39.180Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission14347%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:39.793Z",
+        "url": "https://api2.openreview.net/notes?forum=WxLVYZbIew&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:40.408Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission19102%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:41.027Z",
+        "url": "https://api2.openreview.net/notes?forum=lT3oc04mDp&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:41.635Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission2124%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:42.250Z",
+        "url": "https://api2.openreview.net/notes?forum=wT6GHk5ShC&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:42.867Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission5383%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:43.485Z",
+        "url": "https://api2.openreview.net/notes?forum=6uv9ViIoMj&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:44.094Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission3318%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:44.559Z",
+        "url": "https://api2.openreview.net/notes?forum=MXze4H7opg&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:45.113Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission16917%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:45.578Z",
+        "url": "https://api2.openreview.net/notes?forum=KT6F5Sw0eg&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:46.243Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission8483%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:46.709Z",
+        "url": "https://api2.openreview.net/notes?forum=e5icsXBD8Q&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:47.159Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission13262%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:47.782Z",
+        "url": "https://api2.openreview.net/notes?forum=B1vGiSgELw&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:48.266Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission11554%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:48.907Z",
+        "url": "https://api2.openreview.net/notes?forum=HcqnhqoXS3&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:49.525Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission9319%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:50.136Z",
+        "url": "https://api2.openreview.net/notes?forum=HfpV6u0kbX&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:50.592Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission9392%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:51.267Z",
+        "url": "https://api2.openreview.net/notes?forum=KSOkkHm9I7&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:51.743Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission5494%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:52.392Z",
+        "url": "https://api2.openreview.net/notes?forum=PEEqnXlSCk&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:53.002Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission7434%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:53.619Z",
+        "url": "https://api2.openreview.net/notes?forum=5jRU8ufi8H&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:54.233Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission1726%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:54.727Z",
+        "url": "https://api2.openreview.net/notes?forum=YvA8UF0I37&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:55.358Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission6508%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:55.976Z",
+        "url": "https://api2.openreview.net/notes?forum=YawXY6mWiK&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:56.587Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission14894%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:57.203Z",
+        "url": "https://api2.openreview.net/notes?forum=mp8u2Pcmqz&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:57.662Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission5272%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:58.226Z",
+        "url": "https://api2.openreview.net/notes?forum=M2UzLRoqic&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:58.736Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission21293%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:59.352Z",
+        "url": "https://api2.openreview.net/notes?forum=tVConYid20&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:36:59.809Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission12566%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:37:00.479Z",
+        "url": "https://api2.openreview.net/notes?forum=VqkAKQibpq&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:37:01.092Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission15159%2F-%2FOfficial_Review"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:37:01.708Z",
+        "url": "https://api2.openreview.net/notes?forum=QVG7j29Sta&limit=500&offset=0"
+      },
+      {
+        "cached": false,
+        "fetched_at": "2026-10-30T11:37:02.324Z",
+        "url": "https://api2.openreview.net/invitations?expired=true&id=NeurIPS.cc%2F2024%2FConference%2FSubmission9756%2F-%2FOfficial_Review"
+      }
+    ],
+    "seed": 42,
+    "selection_file": "data/curation/submission-selection.json",
+    "selection_method": "Selekcja tematyczna po tytule i abstrakcie; kolejność SHA-256 42:<note_id>. Końcowa próba obejmuje dostępne publiczne wątki z listy kandydatów dotyczących efektywności inferencji LLM.",
+    "source": "OpenReview API v2",
+    "source_snapshot": "data/raw/openreview-v3-830dc090e225.json",
+    "source_snapshot_sha256": "830dc090e225959047a2619f2c04905131af7c24008aaad1c7e7634d22ce9302",
+    "status": "topic_subset"
+  },
+  "review_ids": [
+    "01SJ6h5IHh",
+    "03iCetjPVL",
+    "0QwvTp50S5",
+    "12kVokdri2",
+    "1EIB0qowI9",
+    "1HA8hJsaB6",
+    "2K9nA3bqld",
+    "2jNb1iBo6J",
+    "2qNcqtotph",
+    "33BD8Hm1l5",
+    "4D3I5RAQhp",
+    "4VPNGuiok3",
+    "4YXwyAzt5r",
+    "4jwNTRQQ33",
+    "4yX5b99zs4",
+    "5iLM05uXEV",
+    "6cQKtZf4El",
+    "88m33eXZuL",
+    "8PlgVEJJ0a",
+    "8wEtj0HdGQ",
+    "9Ad2wXRhPV",
+    "9VAC54OMLv",
+    "AKVSkXJKfk",
+    "ASP8rOd5Wr",
+    "AwSKPrQJD1",
+    "B1guzAPsxD",
+    "Bbg42GAh9V",
+    "BhsOMTeYRc",
+    "Bm88GSraZd",
+    "BsX3IuseMx",
+    "CH77B1FDYi",
+    "CNUxdOX1PU",
+    "DSFsuloK6v",
+    "DcwXDOY3Y7",
+    "Dv0vEJdMrF",
+    "EGSDUP7BFp",
+    "EkIUZaxEim",
+    "FRZvhUddcR",
+    "G2LgN2uqah",
+    "G9OzsBiwlK",
+    "Ghii7j9z7A",
+    "HlsGhGfEfI",
+    "I3cIx7DQen",
+    "I4ox934Ez5",
+    "IMKz4ffJeD",
+    "KFwFKguftY",
+    "KRobUnaVp1",
+    "KVavUIO4Zk",
+    "KiRVKvlyeg",
+    "MBfo5hSMtv",
+    "MZTxKruFgg",
+    "MjYHXfNNqz",
+    "MzQ8XSRmUG",
+    "ODlNfBYq4Z",
+    "OXc1E3vJBy",
+    "OgsYBaMhW6",
+    "PBSfs8TFRv",
+    "PLKtsYKsUU",
+    "PQdb6eWCrb",
+    "PslTmneGqR",
+    "Q4ScIuaXbF",
+    "Qh2Gjw8hoO",
+    "RbpwVJ5FMO",
+    "T1ROPhqGFn",
+    "TGFCQVGkEe",
+    "TKcKski2aK",
+    "TcqbOjr3gH",
+    "Te8zijrpqM",
+    "U4s76jN4Rg",
+    "UFkaq3YyX6",
+    "V4dcRqItSy",
+    "VCRiyaHGmC",
+    "WHx30xcIpr",
+    "XGKBMwrdEL",
+    "XHJ5cQRnhR",
+    "XXBJz4zrtn",
+    "Xa0ILvOiv7",
+    "XtIxy6yTNs",
+    "XyOtZijfsr",
+    "Y1BJqvcgev",
+    "YN66lg0xUR",
+    "ZGbyv4rPXl",
+    "ZNovR45Ld6",
+    "aNqNdIZp5T",
+    "aUAhFGU9vD",
+    "ab2Ws1ZLzu",
+    "atAaaUWyNy",
+    "bNTZu9269X",
+    "bRqIeGdhfg",
+    "bWESc2amFO",
+    "c0BaWysD4J",
+    "c2ZJq23jIs",
+    "c50MBXpnem",
+    "cVJrqgD7lT",
+    "dpiLgSUgdM",
+    "ee93PA4E4E",
+    "fKgetNlSCr",
+    "fN7kXczols",
+    "fPySskQyW0",
+    "fb7JseR6cF",
+    "gSreW0tN2w",
+    "gc87DBhLPk",
+    "gtK2zHXec3",
+    "hj2YAEBUOE",
+    "i8UoeuHdLw",
+    "iAOXfs3EZ7",
+    "iDiUKY61tl",
+    "iVi6M6WQJN",
+    "ilgpV4qgbp",
+    "jK99mN5580",
+    "jSF87UOiyS",
+    "jowsMaSSnN",
+    "kWpchbylQd",
+    "kefQ5K30nd",
+    "kkQxfllgG8",
+    "lfT0rmabIS",
+    "mAchsqZv8y",
+    "mN0VWTVpgl",
+    "mNxDn8kZuD",
+    "mPU88iUWmr",
+    "ndVsR147BE",
+    "ot5bsHf75X",
+    "r52NZfx8Bc",
+    "rTIoug7iAi",
+    "rro3C7Vk3F",
+    "rsEK1xvEIz",
+    "rwcUJbOfRY",
+    "sec8SYNae2",
+    "t26VhnPBVv",
+    "t31nrn5rqz",
+    "tVUFCMjEfF",
+    "tsSr9nHGXF",
+    "tzhyShH9dJ",
+    "uRvbLgfdT5",
+    "vECR24teXI",
+    "w8AOju6vTN",
+    "wKCbLSlSOB",
+    "wphsValytr",
+    "xucf5Gd6nM",
+    "yO3gTDCmf3",
+    "ymH4LCSBVS",
+    "yyINAUmzbd"
+  ],
+  "schema_version": 1,
+  "snapshot_file": "../raw/corpus.json",
+  "snapshot_sha256": "0aecb4ad7226c368e60fac033acb906868e51d43a9409fb1cd6ae1a8f4b17720"
+}

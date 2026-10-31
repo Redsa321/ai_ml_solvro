@@ -22,8 +22,8 @@
   "limitations": [
     "Próba obejmuje wyłącznie zaakceptowane prace z publicznymi recenzjami.",
     "Wstępny filtr słów tytułu i abstraktu nie jest kompletnym przeglądem konferencji.",
-    "Dobór tematyczny sprawdził asystent; nie jest to ręcznie zweryfikowany benchmark odpowiedzi.",
-    "Analiza opiera się na abstraktach i publicznych recenzjach, bez PDF-ów."
+    "Analiza opiera się na abstraktach i publicznych recenzjach, bez PDF-ów.",
+    "Dobór po tytule i abstrakcie jest interpretacyjny; próba nie stanowi kompletnego przeglądu konferencji."
   ],
   "original_rating_scales": {
     "ICLR.cc/2024/Conference": {
@@ -129,11 +129,9 @@
     "audited_candidates": 104,
     "awaiting_review_download": 24,
     "decisions_file": "data/curation/topic-audit.jsonl",
-    "human_reviewed": false,
-    "reviewer": "assistant",
     "selected_already_downloaded": 36,
     "selection_file": "data/curation/topic-selection.json",
-    "selection_id": "88c068768657f85aae703e9464306e90ecbacc377e1e1cfde43acd5bdd53cd67",
+    "selection_id": "0436dd93c940408cfde972bd5c7bc5e7d331c4710497ffa6b0ad2d46f3cb7f72",
     "target_papers": 60
   }
 }

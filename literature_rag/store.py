@@ -55,7 +55,7 @@ HIT_JOIN = """
 def open_index(path: Path):
     path = Path(path).resolve()
     if not path.is_file():
-        raise ValueError(f"Brak indeksu: {path}. Najpierw wykonaj build albo demo.")
+        raise ValueError(f"Brak indeksu: {path}. Wykonaj build albo wskaż istniejącą bazę --db.")
     with closing(sqlite3.connect(path.as_uri() + "?mode=ro", uri=True)) as connection:
         connection.row_factory = sqlite3.Row
         connection.execute("PRAGMA foreign_keys=ON")

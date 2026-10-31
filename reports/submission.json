@@ -1,0 +1,81 @@
+{
+  "artifacts": [
+    "data/raw/corpus.json",
+    "data/index/real.sqlite",
+    "data/manifests/corpus.json",
+    "data/curation/submission-selection.json",
+    "data/curation/topic-selection.json",
+    "data/curation/topic-audit.jsonl",
+    "reports/raport.md",
+    "reports/topic-audit.md",
+    "reports/corpus-audit.json",
+    "reports/rating-scales.json",
+    "reports/comparison.md",
+    "reports/absence-checks.json",
+    "reports/observed-failure.json",
+    "reports/access-check.json",
+    "reports/bm25.json",
+    "reports/overlap.json",
+    "data/raw/openreview-v3-830dc090e225.json",
+    "reports/checks.json"
+  ],
+  "comparison": "reports/comparison.md",
+  "counts": {
+    "chunks": 921,
+    "papers": 36,
+    "sources": 178
+  },
+  "created_at": "2026-10-31T07:19:54.691594+00:00",
+  "database": "data/index/real.sqlite",
+  "evaluation_results": {
+    "bm25": "reports/bm25.json",
+    "overlap": "reports/overlap.json"
+  },
+  "example_runs": {
+    "out_of_topic": "runs/examples/ask-99eaf85c4dce4028a2e1e43053aaf57f",
+    "q01": "runs/examples/ask-88930edc37364629bf9f16bf8d31005b",
+    "q02": "runs/examples/ask-b212677c5ff9439faeb25b0afdbb1c15",
+    "q03": "runs/examples/ask-2aae29713bf44584a80b6b87188e02f4",
+    "q04": "runs/examples/ask-e3da031eebc0449e90517e0c71e86470",
+    "q05": "runs/examples/ask-a989a37372e5465390d0d88efa3bf4d5",
+    "q06": "runs/examples/ask-40536810130242188c0d131bc98f7522",
+    "q07": "runs/examples/ask-e74a7edd3e3246f7b050ad356be0e3e1",
+    "q08": "runs/examples/ask-902546e1b66046898ea4ee642ebab393",
+    "q09": "runs/examples/ask-13e4db06638946089e109a41a00d5c86",
+    "q10": "runs/examples/ask-169119e9057f4fce91f74a38cb2ff49e",
+    "q11": "runs/examples/ask-eec0b1bb1ccb41d386938c3baec6f3dd",
+    "q12": "runs/examples/ask-4dc3fea6ad3e43ec86024c2328967ee8"
+  },
+  "frozen": "evaluation/frozen.json",
+  "generation_status": "not_run",
+  "hit_at_5": {
+    "bm25": {
+      "denominator": 10,
+      "numerator": 10,
+      "value": 1.0
+    },
+    "overlap": {
+      "denominator": 10,
+      "numerator": 10,
+      "value": 1.0
+    }
+  },
+  "index_fingerprint": "2162bc080c1e1a7d62776cc035729a7eec902b5bf2aa39c35f43f631dfc52a2d",
+  "limitations": [
+    "Mała próba dobrana według dostępności publicznych danych.",
+    "Niepełne oznaczenia trafności; brak pomiaru jakości generacji."
+  ],
+  "manifest": "data/manifests/corpus.json",
+  "papers_per_conference": {
+    "ICLR.cc/2024/Conference": 16,
+    "NeurIPS.cc/2024/Conference": 20
+  },
+  "reviews_per_conference": {
+    "ICLR.cc/2024/Conference": 65,
+    "NeurIPS.cc/2024/Conference": 77
+  },
+  "schema_version": 1,
+  "snapshot": "data/raw/corpus.json",
+  "snapshot_sha256": "0aecb4ad7226c368e60fac033acb906868e51d43a9409fb1cd6ae1a8f4b17720",
+  "status": "final"
+}

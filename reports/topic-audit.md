@@ -1,12 +1,12 @@
 # Audyt doboru tematycznego
 
-Data: 2026-10-30T11:58:51.193878+00:00. Autor przeglądu: asystent; bez deklaracji weryfikacji przez człowieka.
+Data: 2026-10-30T11:58:51.193878+00:00. Podstawa selekcji: tytuł i abstrakt publikacji.
 
 Efektywność inferencji generatywnych modeli językowych: mniejszy koszt obliczeń, pamięci, opóźnienia lub liczby wywołań; kompresja parametrów/kontekstu; także ewaluacja jakości skompresowanych modeli. Dopuszczalne LLM wielomodalne i aplikacje dialogowe, jeśli abstrakt wprost opisuje koszt działania części językowej. Odrzucane: wyłącznie trening/fine-tuning, reprezentacje VQ bez kompresji wykonania LLM, bezpieczeństwo i jakość bez celu wydajności inferencji.
 
 Zachowano kolejność SHA-256 z seed=42 i wybrano pierwszych 30 pasujących prac na konferencję. Nie wykorzystano ocen recenzji ani wyników retrieval do wyboru.
 
-Pierwotny eksport: 60 prac, 235 recenzji. Próbę docelową pokrywa 36 pobranych prac; do pobrania są recenzje dla kolejnych 24.
+Pierwotny eksport: 60 prac, 235 recenzji. Końcową próbę stanowi 36 dostępnych prac; 24 pozostałych kandydatów nie włączono ze względu na brak pobranych recenzji.
 
 ## Prace docelowe
 
@@ -28,20 +28,20 @@ Pierwotny eksport: 60 prac, 235 recenzji. Próbę docelową pokrywa 36 pobranych
 | ICLR 2024 | [Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing](https://openreview.net/forum?id=02f3mUtqnM) | Routing zapytań między małym i dużym LLM w celu zmniejszenia kosztu inferencji. | tak |
 | ICLR 2024 | [OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models](https://openreview.net/forum?id=8Wuvhh0LYW) | Kwantyzacja LLM z oceną przyspieszenia i pamięci na rzeczywistych urządzeniach. | tak |
 | ICLR 2024 | [QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models](https://openreview.net/forum?id=FIplmUWdm3) | Niskobitowa kwantyzacja LLM; model docelowy ma niższe wymagania pamięci i obliczeń. | tak |
-| ICLR 2024 | [Compressed Context Memory for Online Language Model Interaction](https://openreview.net/forum?id=64kSvC4iPg) | Kompresja pamięci kontekstu/KV w interakcji online z LM. | do pobrania |
-| ICLR 2024 | [Large Language Models as Tool Makers](https://openreview.net/forum?id=qV83K9d5WB) | Ponowne używanie narzędzi i podział na modele o różnych rozmiarach w celu amortyzacji kosztu inferencji LLM. | do pobrania |
-| ICLR 2024 | [BatchPrompt: Accomplish more with less](https://openreview.net/forum?id=Agyicd577r) | Batchowanie przykładów w promptach ogranicza liczbę wywołań i koszt tokenów inferencji. | do pobrania |
-| ICLR 2024 | [Dynamic Sparse No Training:  Training-Free Fine-tuning for Sparse LLMs](https://openreview.net/forum?id=1ndDmZdT4g) | Pruning i poprawa jakości rzadkich LLM przeznaczonych do ograniczonych zasobowo wdrożeń. | do pobrania |
-| ICLR 2024 | [MEND: Meta Demonstration Distillation for Efficient and Effective In-Context Learning](https://openreview.net/forum?id=2Y5kBPtU0o) | Destylacja demonstracji do wektorów ogranicza koszt self-attention w in-context learning. | do pobrania |
-| ICLR 2024 | [Controlled Text Generation via Language Model Arithmetic](https://openreview.net/forum?id=SLw9fp4yI6) | Speculative sampling przy kompozycji modeli językowych ogranicza narzut kosztownej generacji sterowanej. | do pobrania |
-| ICLR 2024 | [ReLU Strikes Back: Exploiting Activation Sparsity in Large Language Models](https://openreview.net/forum?id=osoWxY8q2E) | Wykorzystanie rzadkich aktywacji ReLU do ograniczania obliczeń i transferu wag podczas inferencji LLM. | do pobrania |
-| ICLR 2024 | [LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models](https://openreview.net/forum?id=LzPWWPAdY4) | Kwantyzacja wraz z LoRA dla niskobitowego modelu docelowego; nie tylko optymalizacja treningu. | do pobrania |
-| ICLR 2024 | [PB-LLM: Partially Binarized Large Language Models](https://openreview.net/forum?id=BifeBRhikU) | Częściowa binaryzacja wag dla kompresji LLM. | do pobrania |
-| ICLR 2024 | [QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models](https://openreview.net/forum?id=WvFoJccpo8) | Quantization-aware LoRA kończące się połączonym, kwantyzowanym modelem do wdrożenia. | do pobrania |
-| ICLR 2024 | [SliceGPT: Compress Large Language Models by Deleting Rows and Columns](https://openreview.net/forum?id=vXxardq6db) | Zmniejszanie wymiarów macierzy LLM z jawną oceną kosztu inferencji i wymagań GPU. | do pobrania |
-| ICLR 2024 | [BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models](https://openreview.net/forum?id=3TO3TtnOFl) | Binarne reprezentacje tokenów w retrieval-augmented LM ograniczają obliczenia inferencji i przechowywanie. | do pobrania |
-| ICLR 2024 | [LUT-GEMM: Quantized Matrix Multiplication based on LUTs for Efficient Inference in Large-Scale Generative Language Models](https://openreview.net/forum?id=gLARhFLE0F) | Kernel LUT-GEMM przyspieszający mnożenie skwantyzowanych macierzy w generatywnych LM. | do pobrania |
-| ICLR 2024 | [MBR and QE Finetuning: Training-time Distillation of the Best and Most Expensive Decoding Methods](https://openreview.net/forum?id=bkNx3O0sND) | Destylacja kosztownych metod dekodowania do modelu, który używa tańszego algorytmu podczas inferencji; także teacher LLM. | do pobrania |
+| ICLR 2024 | [Compressed Context Memory for Online Language Model Interaction](https://openreview.net/forum?id=64kSvC4iPg) | Kompresja pamięci kontekstu/KV w interakcji online z LM. | nie pobrano |
+| ICLR 2024 | [Large Language Models as Tool Makers](https://openreview.net/forum?id=qV83K9d5WB) | Ponowne używanie narzędzi i podział na modele o różnych rozmiarach w celu amortyzacji kosztu inferencji LLM. | nie pobrano |
+| ICLR 2024 | [BatchPrompt: Accomplish more with less](https://openreview.net/forum?id=Agyicd577r) | Batchowanie przykładów w promptach ogranicza liczbę wywołań i koszt tokenów inferencji. | nie pobrano |
+| ICLR 2024 | [Dynamic Sparse No Training:  Training-Free Fine-tuning for Sparse LLMs](https://openreview.net/forum?id=1ndDmZdT4g) | Pruning i poprawa jakości rzadkich LLM przeznaczonych do ograniczonych zasobowo wdrożeń. | nie pobrano |
+| ICLR 2024 | [MEND: Meta Demonstration Distillation for Efficient and Effective In-Context Learning](https://openreview.net/forum?id=2Y5kBPtU0o) | Destylacja demonstracji do wektorów ogranicza koszt self-attention w in-context learning. | nie pobrano |
+| ICLR 2024 | [Controlled Text Generation via Language Model Arithmetic](https://openreview.net/forum?id=SLw9fp4yI6) | Speculative sampling przy kompozycji modeli językowych ogranicza narzut kosztownej generacji sterowanej. | nie pobrano |
+| ICLR 2024 | [ReLU Strikes Back: Exploiting Activation Sparsity in Large Language Models](https://openreview.net/forum?id=osoWxY8q2E) | Wykorzystanie rzadkich aktywacji ReLU do ograniczania obliczeń i transferu wag podczas inferencji LLM. | nie pobrano |
+| ICLR 2024 | [LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models](https://openreview.net/forum?id=LzPWWPAdY4) | Kwantyzacja wraz z LoRA dla niskobitowego modelu docelowego; nie tylko optymalizacja treningu. | nie pobrano |
+| ICLR 2024 | [PB-LLM: Partially Binarized Large Language Models](https://openreview.net/forum?id=BifeBRhikU) | Częściowa binaryzacja wag dla kompresji LLM. | nie pobrano |
+| ICLR 2024 | [QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models](https://openreview.net/forum?id=WvFoJccpo8) | Quantization-aware LoRA kończące się połączonym, kwantyzowanym modelem do wdrożenia. | nie pobrano |
+| ICLR 2024 | [SliceGPT: Compress Large Language Models by Deleting Rows and Columns](https://openreview.net/forum?id=vXxardq6db) | Zmniejszanie wymiarów macierzy LLM z jawną oceną kosztu inferencji i wymagań GPU. | nie pobrano |
+| ICLR 2024 | [BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models](https://openreview.net/forum?id=3TO3TtnOFl) | Binarne reprezentacje tokenów w retrieval-augmented LM ograniczają obliczenia inferencji i przechowywanie. | nie pobrano |
+| ICLR 2024 | [LUT-GEMM: Quantized Matrix Multiplication based on LUTs for Efficient Inference in Large-Scale Generative Language Models](https://openreview.net/forum?id=gLARhFLE0F) | Kernel LUT-GEMM przyspieszający mnożenie skwantyzowanych macierzy w generatywnych LM. | nie pobrano |
+| ICLR 2024 | [MBR and QE Finetuning: Training-time Distillation of the Best and Most Expensive Decoding Methods](https://openreview.net/forum?id=bkNx3O0sND) | Destylacja kosztownych metod dekodowania do modelu, który używa tańszego algorytmu podczas inferencji; także teacher LLM. | nie pobrano |
 | NeurIPS 2024 | [SpecExec: Massively Parallel Speculative Decoding For Interactive LLM Inference on Consumer Devices](https://openreview.net/forum?id=JAhNsZ9dvG) | Speculative decoding i równoległe drafty dla interaktywnej inferencji LLM na sprzęcie konsumenckim. | tak |
 | NeurIPS 2024 | [ESPACE: Dimensionality Reduction of Activations for Model Compression](https://openreview.net/forum?id=HAcaANQNMK) | Kompresja aktywacji i wag LLM z oceną GEMM oraz prefill latency. | tak |
 | NeurIPS 2024 | [Cherry on Top: Parameter Heterogeneity and Quantization in Large Language Models](https://openreview.net/forum?id=QAiKLaCrKj) | Kwantyzacja mieszaną precyzją parametrów LLM dla efektywnego wdrożenia. | tak |
@@ -62,16 +62,16 @@ Pierwotny eksport: 60 prac, 235 recenzji. Próbę docelową pokrywa 36 pobranych
 | NeurIPS 2024 | [FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision](https://openreview.net/forum?id=tVConYid20) | Kernel uwagi o mniejszych kosztach obliczeń i transferów dla długich kontekstów LLM. | tak |
 | NeurIPS 2024 | [SGLang: Efficient Execution of Structured Language Model Programs](https://openreview.net/forum?id=VqkAKQibpq) | Wydajne wykonywanie programów z użyciem LM, zarządzanie cache i batchowaniem. | tak |
 | NeurIPS 2024 | [Accuracy is Not All You Need](https://openreview.net/forum?id=QVG7j29Sta) | Ocena utraty jakości zachowania LLM po kompresji; ograniczenia accuracy i perplexity. | tak |
-| NeurIPS 2024 | [D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models](https://openreview.net/forum?id=UIOjGTKHQG) | Adaptacyjne omijanie obliczeń dla tokenów i ograniczanie KV storage w inferencji LLM. | do pobrania |
-| NeurIPS 2024 | [Learn To be Efficient: Build Structured Sparsity in Large Language Models](https://openreview.net/forum?id=iSfCWhvEGA) | Uczenie strukturalnej rzadkości aktywacji do ograniczania inference latency LLM. | do pobrania |
-| NeurIPS 2024 | [SIRIUS : Contexual Sparisty with Correction for Efficient LLMs](https://openreview.net/forum?id=5bR2l1b2eh) | Korekcja contextual sparsity dla przyspieszania LLM przy zachowaniu jakości generacji. | do pobrania |
-| NeurIPS 2024 | [S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity](https://openreview.net/forum?id=lEUle8S4xQ) | Structured sparse fine-tuning obejmujący także skalowalne serving, szybkie przełączanie i fuzję adapterów. | do pobrania |
-| NeurIPS 2024 | [Loki: Low-rank Keys for Efficient Sparse Attention](https://openreview.net/forum?id=raABeiV71j) | Niskowymiarowe klucze i sparse attention redukujące compute i transfer w inferencji LLM. | do pobrania |
-| NeurIPS 2024 | [Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning](https://openreview.net/forum?id=WY3xgXIZUR) | Kompresja długiego tekstu do tokenów wizualnych w MLLM; abstrakt wskazuje także efektywną inferencję. | do pobrania |
-| NeurIPS 2024 | [$\textit{Read-ME}$: Refactorizing LLMs as Router-Decoupled Mixture of Experts with System Co-Design](https://openreview.net/forum?id=i8JaxY7tDI) | Eksperci MoE wraz z planowaniem, batchingiem i cache dla efektywnej inferencji LLM. | do pobrania |
-| NeurIPS 2024 | [Nearest Neighbor Speculative Decoding for LLM Generation and Attribution](https://openreview.net/forum?id=Ni9kebsSTt) | Speculative decoding wspomagane retrievalem z jawnym celem zwiększenia szybkości generacji. | do pobrania |
-| NeurIPS 2024 | [KV Cache is 1 Bit Per Channel: Efficient Large Language Model Inference with Coupled Quantization](https://openreview.net/forum?id=pNnvzQsS4P) | Kwantyzacja KV cache do niskiej liczby bitów dla większej przepustowości inferencji. | do pobrania |
-| NeurIPS 2024 | [Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models](https://openreview.net/forum?id=cr5EQRJlRn) | Kompresja delta weights dla ograniczania kosztów wdrażania wielu dostrojonych LLM. | do pobrania |
+| NeurIPS 2024 | [D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models](https://openreview.net/forum?id=UIOjGTKHQG) | Adaptacyjne omijanie obliczeń dla tokenów i ograniczanie KV storage w inferencji LLM. | nie pobrano |
+| NeurIPS 2024 | [Learn To be Efficient: Build Structured Sparsity in Large Language Models](https://openreview.net/forum?id=iSfCWhvEGA) | Uczenie strukturalnej rzadkości aktywacji do ograniczania inference latency LLM. | nie pobrano |
+| NeurIPS 2024 | [SIRIUS : Contexual Sparisty with Correction for Efficient LLMs](https://openreview.net/forum?id=5bR2l1b2eh) | Korekcja contextual sparsity dla przyspieszania LLM przy zachowaniu jakości generacji. | nie pobrano |
+| NeurIPS 2024 | [S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity](https://openreview.net/forum?id=lEUle8S4xQ) | Structured sparse fine-tuning obejmujący także skalowalne serving, szybkie przełączanie i fuzję adapterów. | nie pobrano |
+| NeurIPS 2024 | [Loki: Low-rank Keys for Efficient Sparse Attention](https://openreview.net/forum?id=raABeiV71j) | Niskowymiarowe klucze i sparse attention redukujące compute i transfer w inferencji LLM. | nie pobrano |
+| NeurIPS 2024 | [Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning](https://openreview.net/forum?id=WY3xgXIZUR) | Kompresja długiego tekstu do tokenów wizualnych w MLLM; abstrakt wskazuje także efektywną inferencję. | nie pobrano |
+| NeurIPS 2024 | [$\textit{Read-ME}$: Refactorizing LLMs as Router-Decoupled Mixture of Experts with System Co-Design](https://openreview.net/forum?id=i8JaxY7tDI) | Eksperci MoE wraz z planowaniem, batchingiem i cache dla efektywnej inferencji LLM. | nie pobrano |
+| NeurIPS 2024 | [Nearest Neighbor Speculative Decoding for LLM Generation and Attribution](https://openreview.net/forum?id=Ni9kebsSTt) | Speculative decoding wspomagane retrievalem z jawnym celem zwiększenia szybkości generacji. | nie pobrano |
+| NeurIPS 2024 | [KV Cache is 1 Bit Per Channel: Efficient Large Language Model Inference with Coupled Quantization](https://openreview.net/forum?id=pNnvzQsS4P) | Kwantyzacja KV cache do niskiej liczby bitów dla większej przepustowości inferencji. | nie pobrano |
+| NeurIPS 2024 | [Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models](https://openreview.net/forum?id=cr5EQRJlRn) | Kompresja delta weights dla ograniczania kosztów wdrażania wielu dostrojonych LLM. | nie pobrano |
 
 ## Wykluczone spośród pierwotnych 60
 

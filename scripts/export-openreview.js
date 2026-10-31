@@ -89,7 +89,7 @@
           "with public reviews verified against group review_name and actual invitations. " +
           "Automatic topic selection requires manual audit before the final benchmark.",
         target_per_venue: target, status: "in_progress",
-        topic_audit: selection ? "assistant_topic_selection_applied" : "pending_manual_review",
+        topic_audit: selection ? "topic_selection_applied" : "pending_manual_review",
         topic_selection: selection,
         candidates: {}, exclusions: [], selected: [], requests: [], failed_requests: [],
       },

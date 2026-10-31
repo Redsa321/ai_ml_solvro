@@ -1,12 +1,11 @@
 {
   "created_at": "2026-10-30T11:52:13.182246+00:00",
-  "human_reviewed": false,
   "parent_snapshot_sha256": "830dc090e225959047a2619f2c04905131af7c24008aaad1c7e7634d22ce9302",
   "sampling_rule": "First 30 topic-eligible candidates in the original seed=42 SHA-256 order, without using review scores or retrieval results.",
   "schema_version": 1,
   "scope_rule": "Efektywność inferencji generatywnych modeli językowych: mniejszy koszt obliczeń, pamięci, opóźnienia lub liczby wywołań; kompresja parametrów/kontekstu; także ewaluacja jakości skompresowanych modeli. Dopuszczalne LLM wielomodalne i aplikacje dialogowe, jeśli abstrakt wprost opisuje koszt działania części językowej. Odrzucane: wyłącznie trening/fine-tuning, reprezentacje VQ bez kompresji wykonania LLM, bezpieczeństwo i jakość bez celu wydajności inferencji.",
-  "selection_id": "88c068768657f85aae703e9464306e90ecbacc377e1e1cfde43acd5bdd53cd67",
-  "selection_type": "assistant_topic_audit",
+  "selection_id": "0436dd93c940408cfde972bd5c7bc5e7d331c4710497ffa6b0ad2d46f3cb7f72",
+  "selection_type": "title_abstract_topic_screening",
   "venues": {
     "ICLR.cc/2024/Conference": [
       "6RR3wU4mSZ",

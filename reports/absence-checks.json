@@ -1,0 +1,31 @@
+{
+  "q11": {
+    "all_sources_scanned": 178,
+    "interpretation": "Kontrola słów/jednostek wspiera lekturę źródeł; sama nie dowodzi braku odpowiedzi. Zakres nie obejmuje PDF-ów.",
+    "matches": [],
+    "pattern": "\\b(?:joules?|watts?|kwh)\\b|joules?\\s*/\\s*token|j\\s*/\\s*token",
+    "target_matches": [],
+    "target_source_ids": [
+      "8Wuvhh0LYW",
+      "CNUxdOX1PU",
+      "I4ox934Ez5",
+      "c50MBXpnem",
+      "iDiUKY61tl",
+      "wKCbLSlSOB"
+    ]
+  },
+  "q12": {
+    "all_sources_scanned": 178,
+    "interpretation": "Kontrola słów/jednostek wspiera lekturę źródeł; sama nie dowodzi braku odpowiedzi. Zakres nie obejmuje PDF-ów.",
+    "matches": [],
+    "pattern": "131[ ,]?072|\\b128\\s*k\\b|batch(?:\\s+size)?\\s*(?:=|of)?\\s*64\\b",
+    "target_matches": [],
+    "target_source_ids": [
+      "FIplmUWdm3",
+      "IMKz4ffJeD",
+      "XHJ5cQRnhR",
+      "rTIoug7iAi",
+      "tVUFCMjEfF"
+    ]
+  }
+}

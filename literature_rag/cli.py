@@ -21,7 +21,8 @@ from .retrieval import search
 from .snapshot import load_snapshot
 from .store import build_index, metadata, open_index
 
-DEFAULT_DB = Path("data/index/corpus.sqlite")
+DEFAULT_DB = Path("data/index/real.sqlite")
+DEMO_DB = Path("data/index/demo.sqlite")
 FIXTURE = Path(__file__).resolve().parent.parent / "tests/fixtures/synthetic_snapshot.json"
 
 
@@ -115,7 +116,7 @@ def parser() -> argparse.ArgumentParser:
     evaluator.add_argument("--output", type=Path)
 
     demo = commands.add_parser("demo", help="Uruchom demonstrację na jawnie fikcyjnych danych.")
-    demo.add_argument("--db", type=Path, default=DEFAULT_DB)
+    demo.add_argument("--db", type=Path, default=DEMO_DB)
     demo.add_argument("--runs-dir", type=Path, default=Path("runs"))
     demo.add_argument("--manifest-output", type=Path)
     return root

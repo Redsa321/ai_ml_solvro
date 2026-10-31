@@ -78,6 +78,14 @@ def freeze_benchmark(
     if synthetic and not allow_synthetic:
         raise ValueError("Fixtures nie mierzą jakości. Do testu narzędzi użyj --allow-synthetic.")
     questions, _ = load_benchmark(connection, questions_path, judgments_path)
+    annotations = [*questions, *read_jsonl(judgments_path)]
+    explicitly_unreviewed = any(row.get("human_reviewed") is False for row in annotations)
+    human_reviewed = all(row.get("human_reviewed") is True for row in annotations)
+    if not synthetic and not development and explicitly_unreviewed:
+        raise ValueError(
+            "Oznaczenia są propozycją bez przeglądu człowieka. "
+            "Do wyników wstępnych użyj --development; nie oznaczaj ich jako końcowe."
+        )
     answerable = sum(question["answerable"] for question in questions)
     unanswerable = len(questions) - answerable
     if not synthetic and not development and (answerable < 10 or unanswerable < 2):
@@ -87,6 +95,8 @@ def freeze_benchmark(
         "evaluation_type": "synthetic_test_only" if synthetic else (
             "development" if development else "final"
         ),
+        "annotation_review": ("human_reviewed" if human_reviewed else
+                              "unreviewed" if explicitly_unreviewed else "not_recorded"),
         "corpus_fingerprint": info["corpus_fingerprint"],
         "index_fingerprint": info["index_fingerprint"],
         "unit": "unique_source_note", "k": 5,
@@ -147,6 +157,7 @@ def evaluate(
     return {
         "created_at": utc_now(), "dataset_type": info["dataset_type"],
         "evaluation_type": frozen["evaluation_type"], "method": method,
+        "annotation_review": frozen.get("annotation_review", "not_recorded"),
         "benchmark_sha256": file_hash(frozen_path),
         "corpus_fingerprint": info["corpus_fingerprint"],
         "index_fingerprint": info["index_fingerprint"], "unit": "unique_source_note",
@@ -156,6 +167,9 @@ def evaluate(
         "generation_quality": "nie oceniano — brak generacji",
         "questions": rows,
         "limitations": ["Oznaczenia mogą nie obejmować wszystkich trafnych źródeł."] + (
+            ["Oznaczenia nie zostały zweryfikowane; wynik wstępny."]
+            if frozen.get("annotation_review") == "unreviewed" else []
+        ) + (
             ["Dane syntetyczne: wynik testuje kod, nie jakość na publikacjach."]
             if info["dataset_type"] == "synthetic" else []
         ),

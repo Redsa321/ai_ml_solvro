@@ -2,6 +2,7 @@
 
 import io
 import json
+import os
 import sqlite3
 import subprocess
 import sys
@@ -300,6 +301,24 @@ class EvaluationTests(IndexCase):
             with self.assertRaisesRegex(ValueError, "Fixtures"):
                 freeze_benchmark(connection, self.questions, self.judgments, self.frozen)
 
+    def test_unreviewed_annotations_cannot_be_labeled_as_final(self):
+        # Change only the test metadata to exercise the real-data protocol guard.
+        build_index(replace(self.corpus, dataset_type="openreview"), self.db,
+                    self.config, replace=True)
+        rows = [json.loads(line) for line in self.questions.read_text().splitlines()]
+        for row in rows:
+            row["human_reviewed"] = False
+        self.questions.write_text("\n".join(json.dumps(row) for row in rows))
+        with open_index(self.db) as connection:
+            with self.assertRaisesRegex(ValueError, "przeglądu człowieka"):
+                freeze_benchmark(connection, self.questions, self.judgments, self.frozen)
+            frozen = freeze_benchmark(connection, self.questions, self.judgments, self.frozen,
+                                      development=True)
+            self.assertEqual(frozen["annotation_review"], "unreviewed")
+            result = evaluate(connection, self.frozen, "bm25")
+            self.assertEqual(result["evaluation_type"], "development")
+            self.assertTrue(any("wynik wstępny" in text for text in result["limitations"]))
+
     def test_both_methods_exclude_unanswerable_question_from_denominator(self):
         frozen = self.freeze()
         self.assertEqual(frozen["evaluation_type"], "synthetic_test_only")
@@ -345,6 +364,22 @@ class EvaluationTests(IndexCase):
 
 
 class CliTests(unittest.TestCase):
+    def test_default_demo_preserves_the_real_database(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            base = Path(temporary)
+            real = base / "data/index/real.sqlite"
+            real.parent.mkdir(parents=True)
+            real.write_bytes(b"Existing real database must remain untouched")
+            result = subprocess.run(
+                [sys.executable, "-m", "literature_rag", "demo"], cwd=base,
+                env={**os.environ, "PYTHONPATH": str(ROOT)},
+                capture_output=True, text=True, timeout=15,
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertEqual(json.loads(result.stdout)["database"], "data/index/demo.sqlite")
+            self.assertEqual(real.read_bytes(), b"Existing real database must remain untouched")
+            self.assertTrue((base / "data/index/demo.sqlite").is_file())
+
     def test_checkout_cli_runs_offline_from_build_to_evaluation(self):
         with tempfile.TemporaryDirectory() as temporary:
             base = Path(temporary)

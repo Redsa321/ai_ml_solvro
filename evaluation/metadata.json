@@ -1,0 +1,13 @@
+{
+  "corpus_fingerprint": "794408462896b6ad3a99750b4a879d4ae2bd0ed2ebf69992a6b318bba65e3d83",
+  "human_reviewed": true,
+  "index_fingerprint": "2162bc080c1e1a7d62776cc035729a7eec902b5bf2aa39c35f43f631dfc52a2d",
+  "judgment_count": 19,
+  "judgments_sha256": "e69f4615ca6cb5dfbed0689ca22bc633dfe36988203584707ef64b66b91f395e",
+  "labeling_basis": "relevance judgments with source excerpts",
+  "question_count": 12,
+  "questions_sha256": "ca4df969e7ecf8b7827d0adf352eed149f3db8f10c68fcd209c8f05665fc0bb8",
+  "review_blind_to_preliminary_results": false,
+  "reviewed_at": "2026-10-30T19:03:52.168590+00:00",
+  "schema_version": 1
+}

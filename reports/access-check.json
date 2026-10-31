@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-10-30T18:56:30.078486+00:00",
+  "credentials_used": false,
+  "error_name": "ChallengeRequiredError",
+  "method": "GET",
+  "status": 403,
+  "url": "https://api2.openreview.net/notes?forum=6RR3wU4mSZ&limit=1000"
+}

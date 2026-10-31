@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-31T07:24:25.520653+00:00",
+  "archive": "dist/literature-rag-submission.tar.gz",
+  "archive_sha256": "d70e6f89e00426658bcd40ef55a25098f5ef09ad617b462caa3fd8a0fc2c0a9f",
+  "fresh_directory": true,
+  "bundled_database_removed_before_rebuild": true,
+  "file_checksums_verified": true,
+  "offline_rebuild": true,
+  "index_fingerprint_matches": true,
+  "idempotent_import": true,
+  "counts": {
+    "papers": 36,
+    "sources": 178,
+    "chunks": 921
+  },
+  "evaluation_reproduced": {
+    "bm25": {
+      "same_metric": true,
+      "same_source_rankings": true
+    },
+    "overlap": {
+      "same_metric": true,
+      "same_source_rankings": true
+    }
+  },
+  "prompt_created_without_generation": true,
+  "integrity_check": "ok",
+  "foreign_key_errors": 0
+}
